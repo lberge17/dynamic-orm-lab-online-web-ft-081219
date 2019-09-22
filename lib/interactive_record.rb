@@ -47,7 +47,7 @@ class InteractiveRecord
   end
   
   def self.find_by_name(name)
-    #returns row
+    ("SELECT * FROM #{table_name_for_insert} WHERE name = ?", name)
   end
   
   def self.find_by(attribute)
