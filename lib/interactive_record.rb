@@ -43,7 +43,7 @@ class InteractiveRecord
   def save
     sql = "INSERT INTO #{table_name} (#{col_names_for_insert}) VALUES (#{values_for_insert});"
     DB[:conn].execute(sql)
-    self.id = DB[:conn].execute("")
+    self.id = DB[:conn].execute("SELECT last_row_")
     #sets student's id
   end
   
