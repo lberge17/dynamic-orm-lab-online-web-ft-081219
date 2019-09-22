@@ -43,8 +43,8 @@ class InteractiveRecord
     
   end
   
-  def self.find_by
-    
+  def self.find_by(attribute)
+    #returns row
   end
   
 end
