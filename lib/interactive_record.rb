@@ -41,7 +41,9 @@ class InteractiveRecord
   end
   
   def save
-    
+    sql = <<-SQL
+      INSERT INTO #{table_name}
+      SQL
     #saves student to db
     #sets student's id
   end
