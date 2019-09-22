@@ -17,8 +17,9 @@ class InteractiveRecord
     end.compact
   end
   
-  def initialize(options = {})
-    
+  def initialize(properties = {})
+    properties.each do |property|
+      
   end
   
 end
