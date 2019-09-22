@@ -13,7 +13,7 @@ class InteractiveRecord
     table_info = DB[:conn].execute("pragma table_info('#{table_name}')")
     #column_names = []
     table_info.map do |row|
-      column_names << row["name"]
+      row["name"]
     end.compact
   end
   
