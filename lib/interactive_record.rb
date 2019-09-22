@@ -17,18 +17,11 @@ class InteractiveRecord
     end.compact
   end
   
-#  def initialize(properties={})
-#    properties.each do |property, value|
-
-#        self.send("#{property}=", value)
-#      end
-#    end
-#  end
-  
-  def initialize(options={})
-    options.each do |property, value|
+  def initialize(properties={})
+    properties.each do |property, value|
       self.send("#{property}=", value)
     end
   end
+
   
 end
