@@ -17,13 +17,13 @@ class InteractiveRecord
     end.compact
   end
   
-  def initialize(properties={})
-    properties.each do |property, value|
-      if property != "id"
-        self.send("#{property}=", value)
-      end
-    end
-  end
+#  def initialize(properties={})
+#    properties.each do |property, value|
+#      if property != "id"
+#        self.send("#{property}=", value)
+#      end
+#    end
+#  end
   
   def initialize(options={})
     options.each do |property, value|
