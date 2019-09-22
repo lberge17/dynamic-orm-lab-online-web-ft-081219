@@ -17,6 +17,8 @@ class InteractiveRecord
     end.compact
   end
   
-  
+  def initialize(hash)
+    
+  end
   
 end
