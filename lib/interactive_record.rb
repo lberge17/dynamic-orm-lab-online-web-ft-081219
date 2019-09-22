@@ -29,18 +29,20 @@ class InteractiveRecord
   
   def col_names_for_insert
     
+    #formats col names
   end
   
   def values_for_insert
-    
+    #formats value names
   end
   
   def save
-    
+    #saves student to db
+    #sets student's id
   end
   
-  def self.find_by_name
-    
+  def self.find_by_name(name)
+    #returns row
   end
   
   def self.find_by(attribute)
