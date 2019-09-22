@@ -11,10 +11,12 @@ class InteractiveRecord
     DB[:conn].results_as_hash = true
     
     table_info = DB[:conn].execute("pragma table_info('#{table_name}')")
-    #column_names = []
+    
     table_info.map do |row|
       row["name"]
     end.compact
   end
+  
+  
   
 end
