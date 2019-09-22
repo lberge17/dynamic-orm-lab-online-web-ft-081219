@@ -19,7 +19,7 @@ class InteractiveRecord
   
 #  def initialize(properties={})
 #    properties.each do |property, value|
-#      if property != "id"
+
 #        self.send("#{property}=", value)
 #      end
 #    end
