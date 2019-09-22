@@ -4,7 +4,7 @@ require 'interactive_record.rb'
 
 class Student < InteractiveRecord
 
-  self.column_names.each do |row|
+  self.column_names.each do |col_name|
     
   end
   
