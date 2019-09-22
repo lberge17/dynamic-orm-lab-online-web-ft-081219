@@ -17,7 +17,7 @@ class InteractiveRecord
     end.compact
   end
   
-  def initialize(properties = {})
+  def initialize(properties={})
     properties.each do |property, value|
       if property != "id"
         self.send("#{property}=", value)
