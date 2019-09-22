@@ -41,6 +41,7 @@ class InteractiveRecord
   end
   
   def save
+    
     #saves student to db
     #sets student's id
   end
